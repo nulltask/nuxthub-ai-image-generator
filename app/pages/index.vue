@@ -78,6 +78,8 @@ async function save() {
         color: "blue",
       });
 
+      saved.value = true;
+
       return res;
     })
     .catch((error) => {
@@ -90,8 +92,6 @@ async function save() {
     .finally(() => {
       imageGenerating.value = false;
     });
-
-  saved.value = true;
 }
 </script>
 
